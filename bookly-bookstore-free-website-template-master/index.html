@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <script src="https://cdn.amplitude.com/script/AMPLITUDE_API_KEY.js"></script>
+    <script src="https://cdn.amplitude.com/script/b8516430e204bc1cf831bb5e745248dc.js"></script>
     <script>
       window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
       window.amplitude.init("b8516430e204bc1cf831bb5e745248dc", {
@@ -1773,5 +1773,23 @@
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.amplitude.com/script/b8516430e204bc1cf831bb5e745248dc.js"></script>
+    <script>
+      window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
+      window.amplitude.init("b8516430e204bc1cf831bb5e745248dc", {
+        fetchRemoteConfig: true,
+        autocapture: {
+          attribution: true,
+          fileDownloads: true,
+          formInteractions: true,
+          pageViews: true,
+          sessions: true,
+          elementInteractions: true,
+          networkTracking: true,
+          webVitals: true,
+          frustrationInteractions: true,
+        },
+      });
+    </script>
   </body>
 </html>
